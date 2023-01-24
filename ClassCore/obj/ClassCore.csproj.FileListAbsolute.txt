@@ -1,0 +1,30 @@
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\Bin\ClassCore.dll
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\Bin\ClassCore.pdb
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\ClassCore\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\ClassCore\obj\Debug\ClassCore.dll
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\ClassCore\obj\Debug\ClassCore.pdb
+D:\T8-1 CCS Project\Bin\ClassCore.dll
+D:\T8-1 CCS Project\Bin\ClassCore.pdb
+D:\T8-1 CCS Project\T8-1 CCS\ClassCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-1 CCS Project\T8-1 CCS\ClassCore\obj\Debug\ClassCore.dll
+D:\T8-1 CCS Project\T8-1 CCS\ClassCore\obj\Debug\ClassCore.pdb
+D:\T8-1 CCS Project\Run\LC\ClassCore.dll
+D:\T8-1 CCS Project\Run\LC\ClassCore.pdb
+D:\T8-1 CCS Project\Source\T8-1 CCS\ClassCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-1 CCS Project\Source\T8-1 CCS\ClassCore\obj\Debug\ClassCore.dll
+D:\T8-1 CCS Project\Source\T8-1 CCS\ClassCore\obj\Debug\ClassCore.pdb
+D:\T8-2 CCS Project\Source\Run\LC\ClassCore.dll
+D:\T8-2 CCS Project\Source\Run\LC\ClassCore.pdb
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ClassCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ClassCore\obj\Debug\ClassCore.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ClassCore\obj\Debug\ClassCore.pdb
+D:\T8-2 CCS Project\Source\001. 소스 백업\Run\LC\ClassCore.dll
+D:\T8-2 CCS Project\Source\001. 소스 백업\Run\LC\ClassCore.pdb
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ClassCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ClassCore\obj\Debug\ClassCore.dll
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ClassCore\obj\Debug\ClassCore.pdb
+D:\T8-2 CCS Project\Run\LC\ClassCore.dll
+D:\T8-2 CCS Project\Run\LC\ClassCore.pdb
+D:\T8-2 CCS Project\Source\ProdPlanManager\ClassCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager\ClassCore\obj\Debug\ClassCore.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager\ClassCore\obj\Debug\ClassCore.pdb

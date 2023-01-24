@@ -1,0 +1,147 @@
+﻿using System;
+using System.ComponentModel;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Text;
+using System.Drawing;
+using System.Windows.Forms;
+using System.IO;
+
+namespace LogCore
+{
+	public partial class LogManager : Component
+	{
+		private string logFilePath = "";
+		private int logDeleteDay = 100;
+
+		public string LogFilePath
+		{
+			get { return logFilePath; }
+			set { logFilePath = value; }
+		}
+		public int LogDeleteDay
+		{
+			get { return logDeleteDay; }
+			set { logDeleteDay = value; }
+		}
+
+		public delegate void LogWriteEvent(object sender, LogEventArgs args);
+		public event LogWriteEvent OnLogWriteEvent = null;
+
+
+		public LogManager()
+		{
+			InitializeComponent();
+		}
+		public LogManager(IContainer container)
+		{
+			container.Add(this);
+			InitializeComponent();
+		}
+
+        public eLogResult WriteLog(string logText)
+        {
+            eLogResult result = eLogResult.OK;
+            LogInfo logInfo = new LogInfo(logText);
+
+            if (logFilePath.Trim() != "")
+            {
+                string pathName = logFilePath.TrimEnd('\\');
+                string fileName = pathName + "\\" + logInfo.LogTime.ToString("yyyyMMdd_HH") + ".txt";
+                if (!Directory.Exists(pathName)) Directory.CreateDirectory(pathName);
+
+                if (Directory.Exists(pathName))
+                {
+                    try
+                    {
+                        using (StreamWriter sw = File.AppendText(fileName))
+                        {
+                            sw.WriteLine(logInfo.LogTime.ToString("[HH:mm:ss]") + logInfo.LogText);
+                        }
+                    }
+                    catch
+                    {
+                        result = eLogResult.NotAccessFile;
+                    }
+                }
+                else
+                {
+                    result = eLogResult.NotFoundDirectory;
+                }
+            }
+            else
+            {
+                result = eLogResult.NotFilePath;
+            }
+
+            //Event
+            if (OnLogWriteEvent != null)
+            {
+                LogEventArgs args = new LogEventArgs(logInfo);
+                OnLogWriteEvent(this, args);
+            }
+
+            return result;
+        }
+		public eLogResult WriteLog(string serialNo, string logText)
+		{
+			eLogResult result = eLogResult.OK;
+			LogInfo logInfo = new LogInfo(logText);
+
+			if (logFilePath.Trim() != "")
+			{
+				string pathName = logFilePath.TrimEnd('\\');
+				string fileName = pathName + "\\" + logInfo.LogTime.ToString("yyyyMMdd_HH") + ".csv";
+				if (!Directory.Exists(pathName)) Directory.CreateDirectory(pathName);
+
+				if (Directory.Exists(pathName))
+				{
+					try
+					{
+                        //using (StreamWriter sw = File.AppendText(fileName))
+                        //{
+                        //    sw.WriteLine(logInfo.LogTime.ToString("[HH:mm:ss]") + logInfo.LogText);
+                        //}
+                        File.AppendAllText(fileName, logInfo.LogTime.ToString("[HH:mm:ss]") + logInfo.LogText + "\r\n", Encoding.Default);
+					}
+					catch
+					{
+						result = eLogResult.NotAccessFile;
+					}
+				}
+				else
+				{
+					result = eLogResult.NotFoundDirectory;
+				}
+			}
+			else
+			{
+				result = eLogResult.NotFilePath;
+			}
+
+			//Event
+			if (OnLogWriteEvent != null)
+			{
+				LogEventArgs args = new LogEventArgs(logInfo);
+				OnLogWriteEvent(this, args);
+			}
+
+			return result;
+		}
+		private void deleteTimer_Tick(object sender, EventArgs e)
+		{
+			if (logFilePath.Trim() != "")
+			{
+				string pathName = logFilePath.TrimEnd('\\');
+				for (int i = 0; i < 10; i++)
+				{
+					string fileName = pathName + "\\" + DateTime.Now.AddDays(-logDeleteDay - i).ToString("yyyyMMdd_HH") + ".txt";
+					if (File.Exists(fileName)) File.Delete(fileName);
+
+                    fileName = pathName + "\\" + DateTime.Now.AddDays(-logDeleteDay - i).ToString("yyyyMMdd_HH") + ".csv";
+                    if (File.Exists(fileName)) File.Delete(fileName);
+				}
+			}
+		}
+	}
+}

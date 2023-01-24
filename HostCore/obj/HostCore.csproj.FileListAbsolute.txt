@@ -1,0 +1,66 @@
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\Bin\HostCore.dll
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\Bin\HostCore.pdb
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\Interop.XGateLib.dll
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\AxInterop.XGateLib.dll
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.csproj.ResolveComReference.cache
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.HostCom.resources
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.XGateForm.resources
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.csproj.GenerateResource.Cache
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.dll
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.pdb
+D:\T8-1 CCS Project\Bin\HostCore.dll
+D:\T8-1 CCS Project\Bin\HostCore.pdb
+D:\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\Interop.XGateLib.dll
+D:\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\AxInterop.XGateLib.dll
+D:\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.csproj.ResolveComReference.cache
+D:\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.HostCom.resources
+D:\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.XGateForm.resources
+D:\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.csproj.GenerateResource.Cache
+D:\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.dll
+D:\T8-1 CCS Project\T8-1 CCS\HostCore\obj\Debug\HostCore.pdb
+D:\T8-1 CCS Project\Run\LC\HostCore.dll
+D:\T8-1 CCS Project\Run\LC\HostCore.pdb
+D:\T8-1 CCS Project\Source\T8-1 CCS\HostCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-1 CCS Project\Source\T8-1 CCS\HostCore\obj\Debug\Interop.XGateLib.dll
+D:\T8-1 CCS Project\Source\T8-1 CCS\HostCore\obj\Debug\AxInterop.XGateLib.dll
+D:\T8-1 CCS Project\Source\T8-1 CCS\HostCore\obj\Debug\HostCore.csproj.ResolveComReference.cache
+D:\T8-1 CCS Project\Source\T8-1 CCS\HostCore\obj\Debug\HostCore.HostCom.resources
+D:\T8-1 CCS Project\Source\T8-1 CCS\HostCore\obj\Debug\HostCore.XGateForm.resources
+D:\T8-1 CCS Project\Source\T8-1 CCS\HostCore\obj\Debug\HostCore.csproj.GenerateResource.Cache
+D:\T8-1 CCS Project\Source\T8-1 CCS\HostCore\obj\Debug\HostCore.dll
+D:\T8-1 CCS Project\Source\T8-1 CCS\HostCore\obj\Debug\HostCore.pdb
+D:\T8-2 CCS Project\Source\Run\LC\HostCore.dll
+D:\T8-2 CCS Project\Source\Run\LC\HostCore.pdb
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\HostCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\HostCore\obj\Debug\Interop.XGateLib.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\HostCore\obj\Debug\AxInterop.XGateLib.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\HostCore\obj\Debug\HostCore.csproj.ResolveComReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\HostCore\obj\Debug\HostCore.HostCom.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\HostCore\obj\Debug\HostCore.XGateForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\HostCore\obj\Debug\HostCore.csproj.GenerateResource.Cache
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\HostCore\obj\Debug\HostCore.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\HostCore\obj\Debug\HostCore.pdb
+D:\T8-2 CCS Project\Source\001. 소스 백업\Run\LC\HostCore.dll
+D:\T8-2 CCS Project\Source\001. 소스 백업\Run\LC\HostCore.pdb
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\HostCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\HostCore\obj\Debug\Interop.XGateLib.dll
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\HostCore\obj\Debug\AxInterop.XGateLib.dll
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\HostCore\obj\Debug\HostCore.csproj.ResolveComReference.cache
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\HostCore\obj\Debug\HostCore.HostCom.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\HostCore\obj\Debug\HostCore.XGateForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\HostCore\obj\Debug\HostCore.csproj.GenerateResource.Cache
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\HostCore\obj\Debug\HostCore.dll
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\HostCore\obj\Debug\HostCore.pdb
+D:\T8-2 CCS Project\Run\LC\HostCore.dll
+D:\T8-2 CCS Project\Run\LC\HostCore.pdb
+D:\T8-2 CCS Project\Source\ProdPlanManager\HostCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager\HostCore\obj\Debug\Interop.XGateLib.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager\HostCore\obj\Debug\AxInterop.XGateLib.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager\HostCore\obj\Debug\HostCore.csproj.ResolveComReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager\HostCore\obj\Debug\HostCore.HostCom.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\HostCore\obj\Debug\HostCore.XGateForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\HostCore\obj\Debug\HostCore.csproj.GenerateResource.Cache
+D:\T8-2 CCS Project\Source\ProdPlanManager\HostCore\obj\Debug\HostCore.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager\HostCore\obj\Debug\HostCore.pdb

@@ -1,0 +1,383 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using ClassCore;
+
+namespace ProdPlanManager
+{
+    public partial class ProductPlanHistory : Form
+    {
+        private bool isBreak = false;
+        private MainForm m_Main = null;
+
+        public ProductPlanHistory(MainForm lcMain)
+        {
+            m_Main = lcMain;
+            InitializeComponent();
+        }
+        public void InitControl()
+        {
+            //ActiveSkin
+            FarPoint.Win.Spread.DefaultSpreadSkins.GetAt(1).Apply(fpSpread1);
+
+            //Split 설정
+            fpSpread1.ColumnSplitBoxPolicy = FarPoint.Win.Spread.SplitBoxPolicy.Never;
+            fpSpread1.RowSplitBoxPolicy = FarPoint.Win.Spread.SplitBoxPolicy.Never;
+
+            //스크롤바 설정
+            fpSpread1.HorizontalScrollBarPolicy = FarPoint.Win.Spread.ScrollBarPolicy.AsNeeded;
+            fpSpread1.VerticalScrollBarPolicy = FarPoint.Win.Spread.ScrollBarPolicy.AsNeeded;
+
+            //TrackPolicy
+            fpSpread1.ScrollBarTrackPolicy = FarPoint.Win.Spread.ScrollBarTrackPolicy.Both;
+
+            //TextTipPolicy
+            fpSpread1.TextTipPolicy = FarPoint.Win.Spread.TextTipPolicy.Fixed;
+
+            //커서 설정
+            fpSpread1.SetCursor(FarPoint.Win.Spread.CursorType.Normal, Cursors.Arrow);
+            fpSpread1.SetCursor(FarPoint.Win.Spread.CursorType.LockedCell, Cursors.Arrow);
+
+            //BackColor
+            fpSpread1_Sheet1.GrayAreaBackColor = SystemColors.ControlLight;
+
+            //BlockOption
+            fpSpread1.SelectionBlockOptions = FarPoint.Win.Spread.SelectionBlockOptions.None;
+            //ReadOnly
+            fpSpread1_Sheet1.OperationMode = FarPoint.Win.Spread.OperationMode.ReadOnly;// | FarPoint.Win.Spread.OperationMode.Normal;
+            fpSpread1_Sheet1.SelectionPolicy = FarPoint.Win.Spread.Model.SelectionPolicy.Single;
+            //Sizeble
+            fpSpread1_Sheet1.Columns.Default.Resizable = false;
+            fpSpread1_Sheet1.Rows.Default.Resizable = false;
+
+            //HeaderCount
+            fpSpread1_Sheet1.RowHeader.ColumnCount = 0;
+            fpSpread1_Sheet1.ColumnHeader.RowCount = 1;
+
+            //BodyCount
+            fpSpread1_Sheet1.RowCount = 0;
+            fpSpread1_Sheet1.ColumnCount = 24;
+
+            //Font
+            fpSpread1.Font = new Font("Verdana", 8.25f);
+            for (int i = 0; i < fpSpread1_Sheet1.RowHeader.ColumnCount; i++)
+                fpSpread1_Sheet1.RowHeader.Columns[i].Font = new Font("Verdana", 8.25f, FontStyle.Bold);
+            for (int i = 0; i < fpSpread1_Sheet1.ColumnHeader.RowCount; i++)
+                fpSpread1_Sheet1.ColumnHeader.Rows[i].Font = new Font("Verdana", 8.25f, FontStyle.Bold);
+
+            //Width
+            for (int i = 0; i < 24; i++)
+            {
+                fpSpread1_Sheet1.Columns[i].Width = 120.0f;
+            }
+            fpSpread1_Sheet1.Columns[0].Width = 140.0f;
+
+            FarPoint.Win.Spread.CellType.TextCellType textType = new FarPoint.Win.Spread.CellType.TextCellType();
+            for (int i = 0; i < 24; i++)
+            {
+                fpSpread1_Sheet1.Columns[i].CellType = textType;
+            }
+
+            //HeaderText
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 0].Text = "Update_Time";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 1].Text = "OrderNo";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 2].Text = "Priority";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 3].Text = "Prod_Kind";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 4].Text = "Prod_Type";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 5].Text = "ProcessID";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 6].Text = "ProductID";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 7].Text = "StepID";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 8].Text = "PPID";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 9].Text = "FlowID";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 10].Text = "BatchID";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 11].Text = "Batch_State";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 12].Text = "Batch_Size";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 13].Text = "P_Maker";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 14].Text = "P_Thickness";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 15].Text = "F_PanelID";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 16].Text = "C_PanelID";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 17].Text = "Input_Line";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 18].Text = "Valid_Flag";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 19].Text = "C_QTY";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 20].Text = "O_QTY";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 21].Text = "R_QTY";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 22].Text = "N_QTY";
+            fpSpread1_Sheet1.ColumnHeader.Cells[0, 23].Text = "FlowGroupList";
+
+
+            //ActiveSkin
+            FarPoint.Win.Spread.DefaultSpreadSkins.GetAt(1).Apply(fpSpread2);
+
+            //Split 설정
+            fpSpread2.ColumnSplitBoxPolicy = FarPoint.Win.Spread.SplitBoxPolicy.Never;
+            fpSpread2.RowSplitBoxPolicy = FarPoint.Win.Spread.SplitBoxPolicy.Never;
+
+            //스크롤바 설정
+            fpSpread2.HorizontalScrollBarPolicy = FarPoint.Win.Spread.ScrollBarPolicy.AsNeeded;
+            fpSpread2.VerticalScrollBarPolicy = FarPoint.Win.Spread.ScrollBarPolicy.AsNeeded;
+
+            //TrackPolicy
+            fpSpread2.ScrollBarTrackPolicy = FarPoint.Win.Spread.ScrollBarTrackPolicy.Both;
+
+            //TextTipPolicy
+            fpSpread2.TextTipPolicy = FarPoint.Win.Spread.TextTipPolicy.Fixed;
+
+            //커서 설정
+            fpSpread2.SetCursor(FarPoint.Win.Spread.CursorType.Normal, Cursors.Arrow);
+            fpSpread2.SetCursor(FarPoint.Win.Spread.CursorType.LockedCell, Cursors.Arrow);
+
+            //BackColor
+            fpSpread2_Sheet1.GrayAreaBackColor = SystemColors.ControlLight;
+
+            //BlockOption
+            fpSpread2.SelectionBlockOptions = FarPoint.Win.Spread.SelectionBlockOptions.None;
+            //ReadOnly
+            fpSpread2_Sheet1.OperationMode = FarPoint.Win.Spread.OperationMode.ReadOnly;// | FarPoint.Win.Spread.OperationMode.Normal;
+            fpSpread2_Sheet1.SelectionPolicy = FarPoint.Win.Spread.Model.SelectionPolicy.Single;
+            //Sizeble
+            fpSpread2_Sheet1.Columns.Default.Resizable = false;
+            fpSpread2_Sheet1.Rows.Default.Resizable = false;
+
+            //HeaderCount
+            fpSpread2_Sheet1.RowHeader.ColumnCount = 0;
+            fpSpread2_Sheet1.ColumnHeader.RowCount = 1;
+
+            //BodyCount
+            fpSpread2_Sheet1.RowCount = 0;
+            fpSpread2_Sheet1.ColumnCount = 24;
+
+            //Font
+            fpSpread2.Font = new Font("Verdana", 8.25f);
+            for (int i = 0; i < fpSpread2_Sheet1.RowHeader.ColumnCount; i++)
+                fpSpread2_Sheet1.RowHeader.Columns[i].Font = new Font("Verdana", 8.25f, FontStyle.Bold);
+            for (int i = 0; i < fpSpread2_Sheet1.ColumnHeader.RowCount; i++)
+                fpSpread2_Sheet1.ColumnHeader.Rows[i].Font = new Font("Verdana", 8.25f, FontStyle.Bold);
+
+            //Width
+            for (int i = 0; i < 24; i++)
+            {
+                fpSpread2_Sheet1.Columns[i].Width = 120.0f;
+            }
+            fpSpread2_Sheet1.Columns[0].Width = 140.0f;
+
+          //  FarPoint.Win.Spread.CellType.TextCellType textType = new FarPoint.Win.Spread.CellType.TextCellType();
+            for (int i = 0; i < 24; i++)
+            {
+                fpSpread2_Sheet1.Columns[i].CellType = textType;
+            }
+
+            //HeaderText
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 0].Text = "Update_Time";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 1].Text = "OrderNo";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 2].Text = "Priority";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 3].Text = "Prod_Kind";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 4].Text = "Prod_Type";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 5].Text = "ProcessID";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 6].Text = "ProductID";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 7].Text = "StepID";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 8].Text = "PPID";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 9].Text = "FlowID";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 10].Text = "BatchID";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 11].Text = "Batch_State";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 12].Text = "Batch_Size";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 13].Text = "P_Maker";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 14].Text = "P_Thickness";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 15].Text = "F_PanelID";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 16].Text = "C_PanelID";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 17].Text = "Input_Line";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 18].Text = "Valid_Flag";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 19].Text = "C_QTY";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 20].Text = "O_QTY";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 21].Text = "R_QTY";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 22].Text = "N_QTY";
+            fpSpread2_Sheet1.ColumnHeader.Cells[0, 23].Text = "FlowGroupList";
+
+
+            //Control
+            dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            dateTimePicker2.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker2.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Value = DateTime.Now.Date;
+            dateTimePicker2.Value = DateTime.Now.Date.AddDays(1).AddSeconds(-1);
+            cbSort.SelectedIndex = 0;
+            //cbLine.SelectedIndex = 0;
+            //panelLoading.Visible = false;
+        }
+        private void ProductPlanHistory_Load(object sender, EventArgs e)
+        {
+            panelLoading.Visible = false;
+            InitControl();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            TimeSpan span = dateTimePicker2.Value - dateTimePicker1.Value;
+            if (span.Days >= 3)
+            {
+                MessageBox.Show("3일 이상의 Log를 검색할 수 없습니다.", "입력오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                LCData.logFromDateTime = dateTimePicker1.Value.ToString("yyyyMMddHHmmss");
+                LCData.logToDateTime = dateTimePicker2.Value.ToString("yyyyMMddHHmmss");
+
+                LCData.logSearchText = tbSearch.Text.Trim();
+                if (cbSort.SelectedIndex == 1) LCData.logDescending = true;
+                else LCData.logDescending = false;
+
+                btnSearch.Enabled = false;
+                panelLoading.Visible = true;
+                fpSpread1.Enabled = false;
+                isBreak = false;
+                progressBar1.Value = 0;
+                LCData.logReadingMax = 100;/////////////////
+
+                m_Main.GetPlanHistorys(LCData.logFromDateTime, LCData.logToDateTime, "Line 1", LCData.logSearchText, LCData.logDescending);
+
+				int count1 = 0;
+				int count2 = 0;
+
+				foreach (PlanHistoryData log in LCData.PlanHistoryDatas)
+				{
+					if (log.ModuleID == LCData.FindParamTarget(eLINE.LINE1))
+					{
+						count1++;
+					}
+					else
+					{
+						count2++;
+					}
+				}
+
+				fpSpread1_Sheet1.RowCount = count1;
+				fpSpread2_Sheet1.RowCount = count2;
+
+                backgroundWorker.RunWorkerAsync();
+            }
+        }
+
+        private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            int rowCount = 0;
+            int rowCount1 = 0;
+            System.Threading.Thread.Sleep(100);
+
+            foreach (PlanHistoryData log in LCData.PlanHistoryDatas)
+            {
+                string time = log.Update_Time.Substring(0, 14).Insert(12, ":").Insert(10, ":").Insert(8, " ").Insert(6, "/").Insert(4, "/");
+
+                if (log.ModuleID == LCData.FindParamTarget(eLINE.LINE1))
+                {
+                    fpSpread1_Sheet1.SetText(rowCount, 0, time);
+
+                    fpSpread1_Sheet1.SetText(rowCount, 1, " " + log.OrderNo);
+                    fpSpread1_Sheet1.SetText(rowCount, 2, " " + log.Priority);
+                    fpSpread1_Sheet1.SetText(rowCount, 3, " " + log.Prod_Kind);
+                    fpSpread1_Sheet1.SetText(rowCount, 4, " " + log.Prod_Type);
+                    fpSpread1_Sheet1.SetText(rowCount, 5, " " + log.ProcessID);
+                    fpSpread1_Sheet1.SetText(rowCount, 6, " " + log.ProductID);
+                    fpSpread1_Sheet1.SetText(rowCount, 7, " " + log.StepID);
+                    fpSpread1_Sheet1.SetText(rowCount, 8, " " + log.PPID);
+                    fpSpread1_Sheet1.SetText(rowCount, 9, " " + log.FlowID);
+                    fpSpread1_Sheet1.SetText(rowCount, 10, " " + log.BatchID);
+                    fpSpread1_Sheet1.SetText(rowCount, 11, " " + log.Batch_State);
+                    fpSpread1_Sheet1.SetText(rowCount, 12, " " + log.Batch_Size);
+                    fpSpread1_Sheet1.SetText(rowCount, 13, " " + log.P_Maker);
+                    fpSpread1_Sheet1.SetText(rowCount, 14, " " + log.P_Thickness);
+                    fpSpread1_Sheet1.SetText(rowCount, 15, " " + log.F_PanelID);
+                    fpSpread1_Sheet1.SetText(rowCount, 16, " " + log.C_PanelID);
+                    fpSpread1_Sheet1.SetText(rowCount, 17, " " + log.Input_Line);
+                    fpSpread1_Sheet1.SetText(rowCount, 18, " " + log.Valid_Flag);
+                    fpSpread1_Sheet1.SetText(rowCount, 19, " " + log.C_QTY);
+                    fpSpread1_Sheet1.SetText(rowCount, 20, " " + log.O_QTY);
+                    fpSpread1_Sheet1.SetText(rowCount, 21, " " + log.R_QTY);
+                    fpSpread1_Sheet1.SetText(rowCount, 22, " " + log.N_QTY);
+                    fpSpread1_Sheet1.SetText(rowCount, 23, " " + log.FlowGroupList);
+
+                    rowCount++;
+
+                    if ((rowCount % 20) == 0)
+                    {
+                        if (isBreak)
+                        {
+                            fpSpread1_Sheet1.RowCount = rowCount;
+                            break;
+                        }
+                        backgroundWorker.ReportProgress((int)(rowCount * 100 / LCData.PlanHistoryDatas.Count));
+                        System.Threading.Thread.Sleep(1);
+                    }
+                }
+                else
+                {
+
+                    fpSpread2_Sheet1.SetText(rowCount1, 0, time);
+
+                    fpSpread2_Sheet1.SetText(rowCount1, 1, " " + log.OrderNo);
+                    fpSpread2_Sheet1.SetText(rowCount1, 2, " " + log.Priority);
+                    fpSpread2_Sheet1.SetText(rowCount1, 3, " " + log.Prod_Kind);
+                    fpSpread2_Sheet1.SetText(rowCount1, 4, " " + log.Prod_Type);
+                    fpSpread2_Sheet1.SetText(rowCount1, 5, " " + log.ProcessID);
+                    fpSpread2_Sheet1.SetText(rowCount1, 6, " " + log.ProductID);
+                    fpSpread2_Sheet1.SetText(rowCount1, 7, " " + log.StepID);
+                    fpSpread2_Sheet1.SetText(rowCount1, 8, " " + log.PPID);
+                    fpSpread2_Sheet1.SetText(rowCount1, 9, " " + log.FlowID);
+                    fpSpread2_Sheet1.SetText(rowCount1, 10, " " + log.BatchID);
+                    fpSpread2_Sheet1.SetText(rowCount1, 11, " " + log.Batch_State);
+                    fpSpread2_Sheet1.SetText(rowCount1, 12, " " + log.Batch_Size);
+                    fpSpread2_Sheet1.SetText(rowCount1, 13, " " + log.P_Maker);
+                    fpSpread2_Sheet1.SetText(rowCount1, 14, " " + log.P_Thickness);
+                    fpSpread2_Sheet1.SetText(rowCount1, 15, " " + log.F_PanelID);
+                    fpSpread2_Sheet1.SetText(rowCount1, 16, " " + log.C_PanelID);
+                    fpSpread2_Sheet1.SetText(rowCount1, 17, " " + log.Input_Line);
+                    fpSpread2_Sheet1.SetText(rowCount1, 18, " " + log.Valid_Flag);
+                    fpSpread2_Sheet1.SetText(rowCount1, 19, " " + log.C_QTY);
+                    fpSpread2_Sheet1.SetText(rowCount1, 20, " " + log.O_QTY);
+                    fpSpread2_Sheet1.SetText(rowCount1, 21, " " + log.R_QTY);
+                    fpSpread2_Sheet1.SetText(rowCount1, 22, " " + log.N_QTY);
+                    fpSpread2_Sheet1.SetText(rowCount1, 23, " " + log.FlowGroupList);
+
+                    rowCount1++;
+
+                    if ((rowCount1 % 20) == 0)
+                    {
+                        if (isBreak)
+                        {
+                            fpSpread2_Sheet1.RowCount = rowCount1;
+                            break;
+                        }
+                        backgroundWorker.ReportProgress((int)(rowCount1 * 100 / LCData.PlanHistoryDatas.Count));
+                        System.Threading.Thread.Sleep(1);
+                    }
+
+                }
+            }
+        }
+
+        private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            progressBar1.Value = e.ProgressPercentage;
+        }
+
+        private void backgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            btnSearch.Enabled = true;
+            panelLoading.Visible = false;
+            fpSpread1.Enabled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+        }
+
+        private void btnStop_Click_1(object sender, EventArgs e)
+        {
+            isBreak = true;
+        }
+    }
+}

@@ -1,0 +1,363 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using ClassCore;
+
+namespace ProdPlanManager
+{
+    public partial class LogViewForm : Form
+    {
+        public event EventHandler LogViewEvent;
+
+        private string _fromDate = "";
+        private string _toDate = "";
+        private string _serial = "";
+        private string _keyWord = "";
+        private int _page = 0;
+
+        private System.Windows.Forms.Button[] btnColors;
+        private FarPoint.Win.Spread.FpSpread[] fpSpread1s;
+        private BackgroundWorker[] workers;
+
+        public string FROM_DATE
+        {
+            get { return _fromDate; }
+            set { _fromDate = value; }
+        }
+        public string TO_DATE
+        {
+            get { return _toDate; }
+            set { _toDate = value; }
+        }
+        public string SERIAL_WORD
+        {
+            get { return _serial; }
+            set { _serial = value; }
+        }
+        public string KEY_WORD
+        {
+            get { return _keyWord; }
+            set { _keyWord = value; }
+        }
+        public int SELECT_PAGE
+        {
+            get { return _page; }
+            set { _page = value; }
+        }
+        public LogViewForm()
+        {
+            InitializeComponent();
+            InitControl();
+        }
+        public void InitControl()
+        {
+            int vSize = 0;
+
+            string[] strArray1 = new string[5] { "------- 전체보기 ------", "투입 계획 NACK", "CST 정보 NACK", "JOB START NACK", "JOB CANCEL NACK" };
+
+            for (int i = 0; i < 5; i++)
+            {
+                cbSerial.Items.Add(strArray1[i]);
+            }
+
+
+            foreach (LogInfoData logInfo in LCData.logInfoDatas)
+            {
+                cbSerial.Items.Add(logInfo.SerialNo.ToString());
+            }
+          
+            cbSerial.SelectedIndex = 0;
+
+            dateTimePicker1.CustomFormat = "yyyy-MM-dd HH";
+            dateTimePicker2.CustomFormat = "yyyy-MM-dd HH";
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker2.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Value = DateTime.Now.Date;
+            dateTimePicker2.Value = DateTime.Now.Date.AddDays(1).AddSeconds(-1);
+            
+
+            fpSpread1s = new FarPoint.Win.Spread.FpSpread[3];
+            btnColors = new System.Windows.Forms.Button[7];
+            workers = new BackgroundWorker[2];           
+
+            for (int i = 0; i < 3; i++)
+            {
+                this.fpSpread1s[i] = new FarPoint.Win.Spread.FpSpread();
+                FarPoint.Win.Spread.SheetView fpSpread1s_Sheet1 = new FarPoint.Win.Spread.SheetView();
+
+                this.fpSpread1s[i].Sheets.AddRange(new FarPoint.Win.Spread.SheetView[] { fpSpread1s_Sheet1 });
+
+                this.fpSpread1s[i].Location = new System.Drawing.Point(3, i < 2 ? 6 + vSize : 6);
+                this.fpSpread1s[i].Size = new System.Drawing.Size(970, i < 2 ? 251 : 430);
+
+                this.fpSpread1s[i].Sheets[0].Reset();
+                this.fpSpread1s[i].Sheets[0].SheetName = "Sheet1";
+
+                //ActiveSkin
+                FarPoint.Win.Spread.DefaultSpreadSkins.GetAt(1).Apply(this.fpSpread1s[i]);
+
+                //Split 설정
+                this.fpSpread1s[i].ColumnSplitBoxPolicy = FarPoint.Win.Spread.SplitBoxPolicy.Never;
+                this.fpSpread1s[i].RowSplitBoxPolicy = FarPoint.Win.Spread.SplitBoxPolicy.Never;
+
+                //스크롤바 설정
+                this.fpSpread1s[i].HorizontalScrollBarPolicy = FarPoint.Win.Spread.ScrollBarPolicy.Never;
+                this.fpSpread1s[i].VerticalScrollBarPolicy = FarPoint.Win.Spread.ScrollBarPolicy.AsNeeded;
+
+                //TrackPolicy
+                this.fpSpread1s[i].ScrollBarTrackPolicy = FarPoint.Win.Spread.ScrollBarTrackPolicy.Both;
+
+                //TextTipPolicy
+                this.fpSpread1s[i].TextTipPolicy = FarPoint.Win.Spread.TextTipPolicy.Fixed;
+
+                //커서 설정
+                this.fpSpread1s[i].SetCursor(FarPoint.Win.Spread.CursorType.Normal, Cursors.Arrow);
+                this.fpSpread1s[i].SetCursor(FarPoint.Win.Spread.CursorType.LockedCell, Cursors.Arrow);
+
+                //BlockOption
+                this.fpSpread1s[i].SelectionBlockOptions = FarPoint.Win.Spread.SelectionBlockOptions.None;
+
+                //Sizeble
+                this.fpSpread1s[i].Sheets[0].Rows.Default.Resizable = false;
+
+                //HeaderCount
+                this.fpSpread1s[i].Sheets[0].RowHeader.ColumnCount = 0;
+                this.fpSpread1s[i].Sheets[0].ColumnHeader.RowCount = 1;
+
+                //BodyCount
+                this.fpSpread1s[i].Sheets[0].RowCount = 0;
+                this.fpSpread1s[i].Sheets[0].ColumnCount = 2;
+
+                this.fpSpread1s[i].Font = new Font("Verdana", 8.25f);
+                for (int j = 0; j < this.fpSpread1s[i].Sheets[0].RowHeader.ColumnCount; j++)
+                    this.fpSpread1s[i].Sheets[0].RowHeader.Columns[j].Font = new Font("Verdana", 8.25f, FontStyle.Bold);
+                for (int j = 0; j < this.fpSpread1s[i].Sheets[0].ColumnHeader.RowCount; j++)
+                    this.fpSpread1s[i].Sheets[0].ColumnHeader.Rows[j].Font = new Font("Verdana", 8.25f, FontStyle.Bold);
+
+                //Alignment
+                this.fpSpread1s[i].Sheets[0].Columns[0].HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Center;
+                this.fpSpread1s[i].Sheets[0].Columns[0].VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
+                this.fpSpread1s[i].Sheets[0].Columns[1].HorizontalAlignment = FarPoint.Win.Spread.CellHorizontalAlignment.Left;
+                this.fpSpread1s[i].Sheets[0].Columns[1].VerticalAlignment = FarPoint.Win.Spread.CellVerticalAlignment.Center;
+
+                //Width
+                this.fpSpread1s[i].Sheets[0].Columns[0].Width = 160.0f;
+                this.fpSpread1s[i].Sheets[0].Columns[1].Width = 785.0f;
+
+
+                FarPoint.Win.Spread.CellType.TextCellType textType = new FarPoint.Win.Spread.CellType.TextCellType();
+                for (int j = 0; j < this.fpSpread1s[i].Sheets[0].ColumnCount; j++)
+                {
+                    this.fpSpread1s[i].Sheets[0].Columns[j].CellType = textType;
+                }
+
+                this.fpSpread1s[i].Sheets[0].ColumnHeader.Cells[0, 0].Text = "DateTime";
+                this.fpSpread1s[i].Sheets[0].ColumnHeader.Cells[0, 1].Text = "Comment";
+
+                vSize += 257;               
+            }
+
+            this.tabControl1.TabPages[0].Text = string.Format("{0, 50}","투입 현황 로그").PadRight(100,' ');
+            this.tabControl1.TabPages[1].Text = string.Format("{0, 50}","HOST MESSAGE").PadRight(100, ' ');
+
+            this.tabControl1.TabPages[0].Controls.Add(this.fpSpread1s[0]);
+            this.tabControl1.TabPages[0].Controls.Add(this.fpSpread1s[1]);
+            this.tabControl1.TabPages[1].Controls.Add(this.fpSpread1s[2]);
+
+            this.Controls.Add(this.tabControl1);
+
+            vSize = 10;
+            string[] strArray = new string[7] { "통신", "HOST COMMAND", "OPERATOR COMMAND", "CMD RELPY", "PLC EVENT", "PC COMMAND", "PC EVENT" };
+            
+            for (int i = 0; i < 7; i++)
+            {
+               
+                this.btnColors[i] = new System.Windows.Forms.Button();
+                this.btnColors[i].Name = i.ToString();
+                this.btnColors[i].Location = new System.Drawing.Point(vSize, 75);
+                this.btnColors[i].Size = new System.Drawing.Size(120, 24);
+                this.btnColors[i].BackColor = Color.Transparent;
+                this.btnColors[i].Text = strArray[i];
+                this.btnColors[i].Click += new EventHandler(btnSelect_Click);
+                this.Controls.Add(this.btnColors[i]);
+                vSize += 120;
+            }           
+            this.workers[0] = new BackgroundWorker();
+            this.workers[0].WorkerSupportsCancellation = true;
+            this.workers[0].DoWork += new DoWorkEventHandler(workers1_DoWork);
+            this.workers[0].RunWorkerCompleted  +=new RunWorkerCompletedEventHandler(RunWorker1Completed);
+            this.workers[0].WorkerReportsProgress = true;
+
+            this.workers[1] = new BackgroundWorker();
+            this.workers[1].WorkerSupportsCancellation = true;
+            this.workers[1].DoWork += new DoWorkEventHandler(workers2_DoWork);
+            this.workers[1].RunWorkerCompleted += new RunWorkerCompletedEventHandler(RunWorker2Completed);
+            this.workers[1].WorkerReportsProgress = true;
+
+            for (int i = 0; i < 7; i++)
+            {
+                LogColorData ColorData = LCData.FindLogColor(i);
+                btnColors[i].ForeColor = Color.FromArgb(ColorData.ColorA, ColorData.ColorR, ColorData.ColorG, ColorData.ColorB);
+            }
+        }
+        private void workers1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            int[] rowCount = new int[2];
+
+            foreach (LogData LogData in LCData.logHistoryDatas.LogHistorys)
+            {                   
+                fpSpread1s[LogData.line - 1].Sheets[0].Cells[rowCount[LogData.line - 1], 0].Text = LogData.Time.Substring(0, 14).Insert(12, ":").Insert(10, ":").Insert(8, " ").Insert(6, "/").Insert(4, "/");
+                fpSpread1s[LogData.line - 1].Sheets[0].Cells[rowCount[LogData.line - 1], 1].Text = LogData.Text;
+
+                if (1000 <=  LogData.log_type &&  1999 >=  LogData.log_type)
+                    fpSpread1s[LogData.line - 1].Sheets[0].Cells[rowCount[LogData.line - 1], 1].ForeColor = btnColors[0].ForeColor;
+                else if (2000 <=  LogData.log_type &&  2999 >=  LogData.log_type)
+                    fpSpread1s[LogData.line - 1].Sheets[0].Cells[rowCount[LogData.line - 1], 1].ForeColor = btnColors[1].ForeColor;
+                else if (3000 <=  LogData.log_type &&  3999 >=  LogData.log_type)
+                    fpSpread1s[LogData.line - 1].Sheets[0].Cells[rowCount[LogData.line - 1], 1].ForeColor = btnColors[2].ForeColor;
+                else if (4000 <=  LogData.log_type &&  4999 >=  LogData.log_type)
+                    fpSpread1s[LogData.line - 1].Sheets[0].Cells[rowCount[LogData.line - 1], 1].ForeColor = btnColors[3].ForeColor;
+                else if (5000 <=  LogData.log_type &&  5999 >=  LogData.log_type)
+                    fpSpread1s[LogData.line - 1].Sheets[0].Cells[rowCount[LogData.line - 1], 1].ForeColor = btnColors[4].ForeColor;
+                else if (6000 <=  LogData.log_type &&  6999 >=  LogData.log_type)
+                    fpSpread1s[LogData.line - 1].Sheets[0].Cells[rowCount[LogData.line - 1], 1].ForeColor = btnColors[5].ForeColor;
+                else if (7000 <=  LogData.log_type &&  7999 >=  LogData.log_type)
+                    fpSpread1s[LogData.line - 1].Sheets[0].Cells[rowCount[LogData.line - 1], 1].ForeColor = btnColors[6].ForeColor;
+             
+                rowCount[LogData.line - 1]++;
+
+                System.Threading.Thread.Sleep(1);
+            }               
+            
+        }
+        private void workers2_DoWork(object sender, DoWorkEventArgs e)
+        {
+            int rowCount = 0;
+            foreach (LogData LogData in LCData.logHistoryDatas.LogHistorys)
+            {
+                fpSpread1s[2].Sheets[0].SetText(rowCount, 0, LogData.Time.Substring(0, 14).Insert(12, ":").Insert(10, ":").Insert(8, " ").Insert(6, "/").Insert(4, "/"));
+                fpSpread1s[2].Sheets[0].SetText(rowCount, 1, " " + LogData.Text);
+                rowCount++;
+
+                System.Threading.Thread.Sleep(1);
+            }
+            
+        }
+
+        private void RunWorker1Completed(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (!btnSearch.Enabled)
+                btnSearch.Enabled = true;
+
+        }
+
+        private void RunWorker2Completed(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (!btnSearch.Enabled)
+                btnSearch.Enabled = true;
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            TimeSpan span = dateTimePicker2.Value - dateTimePicker1.Value;
+            if (span.Days >= 3)
+            {
+                MessageBox.Show("3일 이상의 Log를 검색할 수 없습니다.", "입력오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                KEY_WORD = "";
+                FROM_DATE = dateTimePicker1.Value.ToString("yyyyMMddHH010100");
+                TO_DATE = dateTimePicker2.Value.ToString("yyyyMMddHH595999");
+
+                SERIAL_WORD = cbSerial.Text == "------- 전체보기 ------" ? "" : cbSerial.Text.Trim();
+
+
+                if (cbSerial.Text == "투입 계획 NACK")
+                {
+                    KEY_WORD = "투입계획다운로드 NACK";
+                    SERIAL_WORD = "";
+                }
+                else if (cbSerial.Text == "CST 정보 NACK")
+                {
+                    KEY_WORD = "CST INFOR NACK";
+                    SERIAL_WORD = "";
+                }
+                else if (cbSerial.Text == "JOB START NACK")
+                {
+                    KEY_WORD = "JOB START NACK";
+                    SERIAL_WORD = "";
+                }
+                else if (cbSerial.Text == "JOB CANCEL NACK")
+                {
+                    KEY_WORD = "JOB CANCEL NACK";
+                    SERIAL_WORD = "";
+                }
+
+                KEY_WORD += " " + tbSearch.Text.Trim();
+
+                LogViewEvent(this, null);
+                if (btnSearch.Enabled)  btnSearch.Enabled = false;
+
+                switch (tabControl1.SelectedIndex)
+                {
+                    case 0:
+                        {
+                            fpSpread1s[0].Sheets[0].RowCount = LCData.logHistoryDatas.L1Count;
+                            fpSpread1s[1].Sheets[0].RowCount = LCData.logHistoryDatas.L2Count;
+                            lbComment.Text = "전체" + (fpSpread1s[0].Sheets[0].RowCount + fpSpread1s[1].Sheets[0].RowCount) + " 건이 검색되었습니다.";
+                            workers[0].RunWorkerAsync();
+                        }
+                        break;
+                    case 1:
+                        {
+                            fpSpread1s[2].Sheets[0].RowCount = LCData.logHistoryDatas.L1Count;
+                            lbComment.Text = "전체" + fpSpread1s[2].Sheets[0].RowCount + " 건이 검색되었습니다.";
+                            workers[1].RunWorkerAsync();
+                        }
+                        break;
+                }              
+            }
+        }
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+
+            ColorDialog SelectColor = new ColorDialog();
+
+            if (SelectColor.ShowDialog() == DialogResult.OK)
+            {
+                btn.ForeColor = SelectColor.Color;
+            }
+        }      
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 6; i++)
+            {
+                LogColorData ColorData = LCData.FindLogColor(i);
+                if (ColorData != null)
+                {
+                    ColorData.ColorA = btnColors[i].ForeColor.A;
+                    ColorData.ColorR = btnColors[i].ForeColor.R;
+                    ColorData.ColorG = btnColors[i].ForeColor.G;
+                    ColorData.ColorB = btnColors[i].ForeColor.B;
+                }
+            }
+            this.Hide();
+        }
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (tabControl1.SelectedIndex)
+            {
+                case 0: cbSerial.Enabled = true; break;
+                case 1: cbSerial.Enabled = false; break;
+            }
+            SELECT_PAGE = tabControl1.SelectedIndex;
+        }       
+    }
+}

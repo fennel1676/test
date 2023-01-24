@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{759F9EE5-84B6-477C-A0E3-519C8405BCBE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProdPlanManager</RootNamespace>
+    <AssemblyName>ProdPlanManager</AssemblyName>
+    <ApplicationIcon>ccs.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Run\LC\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\..\Run\LC\ProdPlanManager.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.2012.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Excel, Version=4.0.2012.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PDF, Version=1.0.2012.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.2009.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win, Version=4.0.2009.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.2009.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlSuite\AlarmControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSuite\AlarmControl.Designer.cs">
+      <DependentUpon>AlarmControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSuite\BatchDataControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSuite\BatchDataControl.Designer.cs">
+      <DependentUpon>BatchDataControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSuite\InputControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSuite\InputControl.Designer.cs">
+      <DependentUpon>InputControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSuite\LogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSuite\LogControl.Designer.cs">
+      <DependentUpon>LogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSuite\MsgControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSuite\MsgControl.Designer.cs">
+      <DependentUpon>MsgControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSuite\OperationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSuite\OperationControl.Designer.cs">
+      <DependentUpon>OperationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSuite\PortDataControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSuite\PortDataControl.Designer.cs">
+      <DependentUpon>PortDataControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSuite\PortSlotControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSuite\PortSlotControl.Designer.cs">
+      <DependentUpon>PortSlotControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSuite\StateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSuite\StateControl.designer.cs">
+      <DependentUpon>StateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSuite\SubOperationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSuite\SubOperationControl.Designer.cs">
+      <DependentUpon>SubOperationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuite\BatchNACKForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuite\BatchNACKForm.Designer.cs">
+      <DependentUpon>BatchNACKForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuite\CassetteNACKForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuite\CassetteNACKForm.Designer.cs">
+      <DependentUpon>CassetteNACKForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuite\ConfirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuite\ConfirmForm.Designer.cs">
+      <DependentUpon>ConfirmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuite\DisconnectHostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuite\DisconnectHostForm.designer.cs">
+      <DependentUpon>DisconnectHostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuite\DisconnectPLCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuite\DisconnectPLCForm.Designer.cs">
+      <DependentUpon>DisconnectPLCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuite\JobStartNACKForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuite\JobStartNACKForm.Designer.cs">
+      <DependentUpon>JobStartNACKForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuite\PasswordInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuite\PasswordInputForm.Designer.cs">
+      <DependentUpon>PasswordInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuite\ReConfirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuite\ReConfirmForm.Designer.cs">
+      <DependentUpon>ReConfirmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="OptionSuite\AlarmHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\AlarmHistoryForm.Designer.cs">
+      <DependentUpon>AlarmHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\CreatePlanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\CreatePlanForm.Designer.cs">
+      <DependentUpon>CreatePlanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\DeletePlanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\DeletePlanForm.Designer.cs">
+      <DependentUpon>DeletePlanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\DisplayPortState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\DisplayPortState.Designer.cs">
+      <DependentUpon>DisplayPortState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\ECIDSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\ECIDSetForm.Designer.cs">
+      <DependentUpon>ECIDSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\FlowControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\FlowControlForm.Designer.cs">
+      <DependentUpon>FlowControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\FlowGroupSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\FlowGroupSetForm.Designer.cs">
+      <DependentUpon>FlowGroupSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\FlowIDSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\FlowIDSetForm.Designer.cs">
+      <DependentUpon>FlowIDSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\FlowRecipeDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\FlowRecipeDetailForm.Designer.cs">
+      <DependentUpon>FlowRecipeDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\LogViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\LogViewForm.Designer.cs">
+      <DependentUpon>LogViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\MaintenaceSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\MaintenaceSetForm.Designer.cs">
+      <DependentUpon>MaintenaceSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\ManualBatchEndForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\ManualBatchEndForm.Designer.cs">
+      <DependentUpon>ManualBatchEndForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\ModifyPlanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\ModifyPlanForm.Designer.cs">
+      <DependentUpon>ModifyPlanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\PairProductIDInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\PairProductIDInputForm.Designer.cs">
+      <DependentUpon>PairProductIDInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\PortInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\PortInputForm.Designer.cs">
+      <DependentUpon>PortInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\BatchHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\BatchHistoryForm.Designer.cs">
+      <DependentUpon>BatchHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionSuite\WIPQTYSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionSuite\WIPQTYSetForm.Designer.cs">
+      <DependentUpon>WIPQTYSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ControlSuite\AlarmControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlarmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSuite\BatchDataControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BatchDataControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSuite\InputControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InputControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSuite\LogControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSuite\MsgControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MsgControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSuite\OperationControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OperationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSuite\PortDataControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PortDataControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSuite\PortSlotControl.resx">
+      <DependentUpon>PortSlotControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSuite\StateControl.resx">
+      <DependentUpon>StateControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSuite\SubOperationControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SubOperationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuite\BatchNACKForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BatchNACKForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuite\CassetteNACKForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CassetteNACKForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuite\ConfirmForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConfirmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuite\DisconnectHostForm.resx">
+      <DependentUpon>DisconnectHostForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuite\DisconnectPLCForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DisconnectPLCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuite\JobStartNACKForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JobStartNACKForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuite\PasswordInputForm.resx">
+      <DependentUpon>PasswordInputForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuite\ReConfirmForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReConfirmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\AlarmHistoryForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlarmHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\CreatePlanForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CreatePlanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\DeletePlanForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DeletePlanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\DisplayPortState.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DisplayPortState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\ECIDSetForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ECIDSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\FlowControlForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FlowControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\FlowGroupSetForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FlowGroupSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\FlowIDSetForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FlowIDSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\FlowRecipeDetailForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FlowRecipeDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\LogViewForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\MaintenaceSetForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MaintenaceSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\ManualBatchEndForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ManualBatchEndForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\ModifyPlanForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModifyPlanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\PairProductIDInputForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PairProductIDInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\PortInputForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PortInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\BatchHistoryForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BatchHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionSuite\WIPQTYSetForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WIPQTYSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassCore\ClassCore.csproj">
+      <Project>{3F1C614C-39DA-4F8B-8303-C026F750C826}</Project>
+      <Name>ClassCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EqCore\EqCore.csproj">
+      <Project>{765CBAD6-A1A4-415D-B17B-219C04A1B30B}</Project>
+      <Name>EqCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HostCore\HostCore.csproj">
+      <Project>{758DFB75-5E59-446C-A86B-E5DA5F3814A5}</Project>
+      <Name>HostCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogCore\LogCore.csproj">
+      <Project>{B22C4919-9C84-4189-9DAE-E2B23E073852}</Project>
+      <Name>LogCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlCore\SqlCore.csproj">
+      <Project>{5B5A7A64-CA46-4B86-826E-79F568EF3355}</Project>
+      <Name>SqlCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ccs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

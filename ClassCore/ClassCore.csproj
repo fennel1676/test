@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F1C614C-39DA-4F8B-8303-C026F750C826}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassCore</RootNamespace>
+    <AssemblyName>ClassCore</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Run\LC\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Run\LC\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LC\AlarmHistoryData.cs" />
+    <Compile Include="LC\BatchGlassData.cs" />
+    <Compile Include="LC\BatchHistoryData.cs" />
+    <Compile Include="LC\BatchLogData.cs" />
+    <Compile Include="LC\BatchManager.cs" />
+    <Compile Include="LC\BatchObject.cs" />
+    <Compile Include="LC\CassetteObject.cs" />
+    <Compile Include="LC\AlarmData.cs" />
+    <Compile Include="LC\FlowGroupInterlock.cs" />
+    <Compile Include="LC\HistorySetData.cs" />
+    <Compile Include="LC\InterlockData.cs" />
+    <Compile Include="LC\LogColorData.cs" />
+    <Compile Include="LC\LogHistoryData.cs" />
+    <Compile Include="LC\LogInfoData.cs" />
+    <Compile Include="LC\MappingData.cs" />
+    <Compile Include="Eq\MsgCmd.cs" />
+    <Compile Include="LC\EqConstantData.cs" />
+    <Compile Include="Eq\EqData.cs" />
+    <Compile Include="LC\EqOnlineParamData.cs" />
+    <Compile Include="Eq\MsgEvent.cs" />
+    <Compile Include="Eq\MsgReport.cs" />
+    <Compile Include="LC\FlowData.cs" />
+    <Compile Include="LC\GlassData.cs" />
+    <Compile Include="Host\Stream6.cs" />
+    <Compile Include="Host\HostData.cs" />
+    <Compile Include="LCData.cs" />
+    <Compile Include="Host\HostEnum.cs" />
+    <Compile Include="LC\ModuleData.cs" />
+    <Compile Include="LC\LogData.cs" />
+    <Compile Include="LC\Notation.cs" />
+    <Compile Include="LC\ParameterData.cs" />
+    <Compile Include="LC\PlanHistoryData.cs" />
+    <Compile Include="LC\PortData.cs" />
+    <Compile Include="LC\PortObject.cs" />
+    <Compile Include="LC\ParameterChangeData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Host\Stream1.cs" />
+    <Compile Include="Host\Stream2.cs" />
+    <Compile Include="Eq\TargetData.cs" />
+    <Compile Include="Host\Stream5.cs" />
+    <Compile Include="Host\Stream10.cs" />
+    <Compile Include="Host\Stream9.cs" />
+    <Compile Include="LC\StateRuleData.cs" />
+    <Compile Include="Host\Stream3.cs" />
+    <Compile Include="LC\WIPQTYData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

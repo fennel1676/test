@@ -1,0 +1,125 @@
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.exe
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.pdb
+D:\T8-2 CCS Project\Source\Run\LC\ProdPlanManager.exe
+D:\T8-2 CCS Project\Source\Run\LC\ProdPlanManager.pdb
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.AlarmControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.MsgControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ConfirmForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.DisconnectHostForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PasswordChangeForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PasswordInputForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ReConfirmForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.AlarmHistoryForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.BatchIDInputForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.CreatePlanForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.DeletePlanForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.DisplayPortState.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ECIDSetForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowControlForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowGroupDetailForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowGroupEditForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowGroupInputForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowGroupSelectForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowRecipeDetailForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.LocalModeForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.LogViewForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.MaintenaceSetForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ManualBatchEndForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.OptionSuite.ManualBatchReqForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ModifyPlanForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PairProductIDInputForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PortInputForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.MainForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.OptionSuite.ProcessHistoryForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ProductPlanHistory.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.WIPQTYSetForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.Properties.Resources.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.csproj.GenerateResource.Cache
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.exe.licenses
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.exe
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.pdb
+D:\T8-2 CCS Project\Source\001. 소스 백업\Run\LC\ProdPlanManager.exe
+D:\T8-2 CCS Project\Source\001. 소스 백업\Run\LC\ProdPlanManager.pdb
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.AlarmControl.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.MsgControl.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ConfirmForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.DisconnectHostForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PasswordChangeForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PasswordInputForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ReConfirmForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.AlarmHistoryForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.BatchIDInputForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.CreatePlanForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.DeletePlanForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.DisplayPortState.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ECIDSetForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowControlForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowGroupDetailForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowGroupEditForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowGroupInputForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowGroupSelectForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowRecipeDetailForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.LocalModeForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.LogViewForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.MaintenaceSetForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ManualBatchEndForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.OptionSuite.ManualBatchReqForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ModifyPlanForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PairProductIDInputForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PortInputForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.MainForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.OptionSuite.ProcessHistoryForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ProductPlanHistory.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.WIPQTYSetForm.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.Properties.Resources.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.csproj.GenerateResource.Cache
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.exe.licenses
+D:\T8-2 CCS Project\Source\ProdPlanManager_new\ProdPlanManager\obj\Debug\ProdPlanManager.exe
+D:\T8-2 CCS Project\Source\ProdPlanManager_new\ProdPlanManager\obj\Debug\ProdPlanManager.pdb
+D:\T8-2 CCS Project\Run\LC\ProdPlanManager.exe
+D:\T8-2 CCS Project\Run\LC\ProdPlanManager.pdb
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.AlarmControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.BatchDataControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.InputControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.LogControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.MsgControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.OperationControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PortDataControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PortSlotControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.StateControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.SubOperationControl.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.BatchNACKForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.CassetteNACKForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ConfirmForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.DisconnectHostForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.DisconnectPLCForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.JobStartNACKForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PasswordInputForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ReConfirmForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.AlarmHistoryForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.CreatePlanForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.DeletePlanForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.DisplayPortState.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ECIDSetForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowControlForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowGroupSetForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowIDSetForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.FlowRecipeDetailForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.LogViewForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.MaintenaceSetForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ManualBatchEndForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.ModifyPlanForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PairProductIDInputForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.PortInputForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.MainForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.BatchHistoryForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.WIPQTYSetForm.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.Properties.Resources.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.csproj.GenerateResource.Cache
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.exe.licenses
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.exe
+D:\T8-2 CCS Project\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.pdb
+D:\T8-2 CCS Project\Run\LC\ProdPlanManager.XML

@@ -1,0 +1,12 @@
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\LogCore.LogManager.resources
+obj\Release\LogCore.csproj.GenerateResource.Cache
+obj\Release\LogCore.dll
+obj\Release\LogCore.pdb
+..\..\..\Run\LC\LogCore.dll
+..\..\..\Run\LC\LogCore.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\LogCore.LogManager.resources
+obj\Debug\LogCore.csproj.GenerateResource.Cache
+obj\Debug\LogCore.dll
+obj\Debug\LogCore.pdb

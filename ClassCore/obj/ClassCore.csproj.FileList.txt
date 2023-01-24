@@ -1,0 +1,10 @@
+..\..\Bin\ClassCore.dll
+..\..\Bin\ClassCore.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\ClassCore.dll
+obj\Release\ClassCore.pdb
+..\..\..\Run\LC\ClassCore.dll
+..\..\..\Run\LC\ClassCore.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ClassCore.dll
+obj\Debug\ClassCore.pdb

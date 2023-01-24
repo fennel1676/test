@@ -1,0 +1,267 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\EQPLC.rc""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""afxres.rc""     // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EQPLC 정보"
+FONT 9, "MS 셸 대화 상자", 0, 0, 0x1
+BEGIN
+    ICON            128,IDC_STATIC,11,17,20,20
+    LTEXT           "EQPLC 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_EQPLC_DIALOG DIALOGEX 0, 0, 369, 350
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "EQPLC"
+FONT 9, "MS 셸 대화 상자", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,277,331,83,11
+    GROUPBOX        "Connection",IDC_STATIC,275,8,87,24
+    GROUPBOX        "PC Signal",IDC_STATIC,6,7,129,334
+    RADIOBUTTON     "LC OFF",IDC_LC_OFF,325,18,34,9
+    RADIOBUTTON     "LC ON",IDC_LC_ON,282,18,34,9,WS_GROUP
+    CONTROL         "",IDC_LIST_PC,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,17,122,319
+    CONTROL         "",IDC_LIST_PLC,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,144,17,122,319
+    GROUPBOX        "PLC Signal",IDC_STATIC,140,7,129,334
+    CONTROL         "수동",IDC_RADIO_MANUAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,282,50,32,10
+    CONTROL         "자동",IDC_RADIO_AUTO,"Button",BS_AUTORADIOBUTTON,325,50,32,10
+    PUSHBUTTON      "Port1 On",IDC_BUTTON_PORT1_ON,279,63,37,11
+    PUSHBUTTON      "Port2 On",IDC_BUTTON_PORT2_ON,279,84,37,11
+    PUSHBUTTON      "Port3 On",IDC_BUTTON_PORT3_ON,279,105,37,11
+    PUSHBUTTON      "Port4 On",IDC_BUTTON_PORT4_ON,279,126,37,11
+    PUSHBUTTON      "Port1 Off",IDC_BUTTON_PORT1_OFF,322,63,37,11
+    PUSHBUTTON      "Port2 Off",IDC_BUTTON_PORT2_OFF,322,84,37,11
+    PUSHBUTTON      "Port3 Off",IDC_BUTTON_PORT3_OFF,322,105,37,11
+    PUSHBUTTON      "Port4 Off",IDC_BUTTON_PORT4_OFF,322,126,37,11
+    GROUPBOX        "Manual Menu",IDC_STATIC,275,34,87,110
+    PUSHBUTTON      "Bit On/Off",IDC_BUTTON_ONOFF,283,150,72,14
+    PUSHBUTTON      "penelInfo Sig Off",IDC_BUTTON2,283,177,72,14
+END
+
+IDD_LC_DIALOG DIALOGEX 0, 0, 95, 16
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_BORDER
+FONT 15, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    LTEXT           "EQPLC is starting........",IDC_STATIC,20,4,68,8
+    CONTROL         "",IDC_CORENETLIBCTRL1,
+                    "{20605580-2FE9-4CC1-951E-2AD210D8C9FB}",NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,48,5,6,6
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "EQPLC.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "EQPLC.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_EQPLC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 342
+    END
+
+    IDD_LC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 88
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 8
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LC_DIALOG DLGINIT
+BEGIN
+    IDC_CORENETLIBCTRL1, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x01dc, 0x0000, 0x01f7, 0x0000, 0x0000, 
+0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINEQPLC           ICON                    "res\\EQPLC.ico"
+IDI_MAINEQPLC1          ICON                    "res\\EQPLC1.ico"
+IDI_MAINEQPLC2          ICON                    "res\\EQPLC2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP MENU 
+BEGIN
+    POPUP "종료(&Q)"
+    BEGIN
+        POPUP "Menu(&M)"
+        BEGIN
+            MENUITEM "Binary Log Record(&B)",       ID_BINARY_LOG
+            MENUITEM "XML Log Record(&X)",          ID_XML_LOG
+        END
+        MENUITEM "Quit(&Q)",                    ID_END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "EQPLC 정보(&A)..."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\EQPLC.rc"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "afxres.rc"     // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

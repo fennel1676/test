@@ -1,0 +1,6 @@
+F:\003. Project\01. ucore\001. 프로젝트 개발 소스\004. 삼성전자 탕정사업장 [CF 초기투입기]\01. Source\Run\LC\ProdPlanManager.XML
+F:\003. Project\01. ucore\001. 프로젝트 개발 소스\004. 삼성전자 탕정사업장 [CF 초기투입기]\01. Source\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.exe
+F:\003. Project\01. ucore\001. 프로젝트 개발 소스\004. 삼성전자 탕정사업장 [CF 초기투입기]\01. Source\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.pdb
+H:\001. Project\01. Ucore\004. 삼성전자 탕정사업장 [CF 초기투입기]\01. Source\Run\LC\ProdPlanManager.XML
+H:\001. Project\01. Ucore\004. 삼성전자 탕정사업장 [CF 초기투입기]\01. Source\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.exe
+H:\001. Project\01. Ucore\004. 삼성전자 탕정사업장 [CF 초기투입기]\01. Source\Source\ProdPlanManager\ProdPlanManager\obj\Debug\ProdPlanManager.pdb

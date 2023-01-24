@@ -1,0 +1,34 @@
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\SqlCore\bin\Debug\SqlCore.dll
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\SqlCore\bin\Debug\SqlCore.pdb
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\SqlCore\bin\Debug\ClassCore.dll
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\SqlCore\bin\Debug\ClassCore.pdb
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\SqlCore\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\SqlCore\obj\Debug\SqlCore.dll
+C:\Documents and Settings\김주찬\바탕 화면\T8-1 CCS Project\T8-1 CCS\SqlCore\obj\Debug\SqlCore.pdb
+D:\T8-1 CCS Project\T8-1 CCS\SqlCore\bin\Debug\SqlCore.dll
+D:\T8-1 CCS Project\T8-1 CCS\SqlCore\bin\Debug\SqlCore.pdb
+D:\T8-1 CCS Project\T8-1 CCS\SqlCore\bin\Debug\ClassCore.dll
+D:\T8-1 CCS Project\T8-1 CCS\SqlCore\bin\Debug\ClassCore.pdb
+D:\T8-1 CCS Project\T8-1 CCS\SqlCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-1 CCS Project\T8-1 CCS\SqlCore\obj\Debug\SqlCore.dll
+D:\T8-1 CCS Project\T8-1 CCS\SqlCore\obj\Debug\SqlCore.pdb
+D:\T8-1 CCS Project\Run\LC\SqlCore.dll
+D:\T8-1 CCS Project\Run\LC\SqlCore.pdb
+D:\T8-1 CCS Project\Source\T8-1 CCS\SqlCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-1 CCS Project\Source\T8-1 CCS\SqlCore\obj\Debug\SqlCore.dll
+D:\T8-1 CCS Project\Source\T8-1 CCS\SqlCore\obj\Debug\SqlCore.pdb
+D:\T8-2 CCS Project\Source\Run\LC\SqlCore.dll
+D:\T8-2 CCS Project\Source\Run\LC\SqlCore.pdb
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\SqlCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\SqlCore\obj\Debug\SqlCore.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\SqlCore\obj\Debug\SqlCore.pdb
+D:\T8-2 CCS Project\Source\001. 소스 백업\Run\LC\SqlCore.dll
+D:\T8-2 CCS Project\Source\001. 소스 백업\Run\LC\SqlCore.pdb
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\SqlCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\SqlCore\obj\Debug\SqlCore.dll
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\SqlCore\obj\Debug\SqlCore.pdb
+D:\T8-2 CCS Project\Run\LC\SqlCore.dll
+D:\T8-2 CCS Project\Run\LC\SqlCore.pdb
+D:\T8-2 CCS Project\Source\ProdPlanManager\SqlCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager\SqlCore\obj\Debug\SqlCore.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager\SqlCore\obj\Debug\SqlCore.pdb

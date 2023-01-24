@@ -1,0 +1,35 @@
+D:\T8-1 CCS Project\T8-1 CCS\LogCore\bin\Debug\LogCore.dll
+D:\T8-1 CCS Project\T8-1 CCS\LogCore\bin\Debug\LogCore.pdb
+D:\T8-1 CCS Project\T8-1 CCS\LogCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-1 CCS Project\T8-1 CCS\LogCore\obj\Debug\LogCore.LogManager.resources
+D:\T8-1 CCS Project\T8-1 CCS\LogCore\obj\Debug\LogCore.csproj.GenerateResource.Cache
+D:\T8-1 CCS Project\T8-1 CCS\LogCore\obj\Debug\LogCore.dll
+D:\T8-1 CCS Project\T8-1 CCS\LogCore\obj\Debug\LogCore.pdb
+D:\T8-1 CCS Project\Run\LC\LogCore.dll
+D:\T8-1 CCS Project\Run\LC\LogCore.pdb
+D:\T8-1 CCS Project\Source\T8-1 CCS\LogCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-1 CCS Project\Source\T8-1 CCS\LogCore\obj\Debug\LogCore.LogManager.resources
+D:\T8-1 CCS Project\Source\T8-1 CCS\LogCore\obj\Debug\LogCore.csproj.GenerateResource.Cache
+D:\T8-1 CCS Project\Source\T8-1 CCS\LogCore\obj\Debug\LogCore.dll
+D:\T8-1 CCS Project\Source\T8-1 CCS\LogCore\obj\Debug\LogCore.pdb
+D:\T8-2 CCS Project\Source\Run\LC\LogCore.dll
+D:\T8-2 CCS Project\Source\Run\LC\LogCore.pdb
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\LogCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\LogCore\obj\Debug\LogCore.LogManager.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\LogCore\obj\Debug\LogCore.csproj.GenerateResource.Cache
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\LogCore\obj\Debug\LogCore.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager(백업)\ProdPlanManager\LogCore\obj\Debug\LogCore.pdb
+D:\T8-2 CCS Project\Source\001. 소스 백업\Run\LC\LogCore.dll
+D:\T8-2 CCS Project\Source\001. 소스 백업\Run\LC\LogCore.pdb
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\LogCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\LogCore\obj\Debug\LogCore.LogManager.resources
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\LogCore\obj\Debug\LogCore.csproj.GenerateResource.Cache
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\LogCore\obj\Debug\LogCore.dll
+D:\T8-2 CCS Project\Source\001. 소스 백업\2008.12.10(SEC 테스트 전)\ProdPlanManager\LogCore\obj\Debug\LogCore.pdb
+D:\T8-2 CCS Project\Run\LC\LogCore.dll
+D:\T8-2 CCS Project\Run\LC\LogCore.pdb
+D:\T8-2 CCS Project\Source\ProdPlanManager\LogCore\obj\Debug\ResolveAssemblyReference.cache
+D:\T8-2 CCS Project\Source\ProdPlanManager\LogCore\obj\Debug\LogCore.LogManager.resources
+D:\T8-2 CCS Project\Source\ProdPlanManager\LogCore\obj\Debug\LogCore.csproj.GenerateResource.Cache
+D:\T8-2 CCS Project\Source\ProdPlanManager\LogCore\obj\Debug\LogCore.dll
+D:\T8-2 CCS Project\Source\ProdPlanManager\LogCore\obj\Debug\LogCore.pdb

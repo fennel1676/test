@@ -1,0 +1,12 @@
+bin\Debug\SqlCore.dll
+bin\Debug\SqlCore.pdb
+bin\Debug\ClassCore.dll
+bin\Debug\ClassCore.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\SqlCore.dll
+obj\Release\SqlCore.pdb
+..\..\..\Run\LC\SqlCore.dll
+..\..\..\Run\LC\SqlCore.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SqlCore.dll
+obj\Debug\SqlCore.pdb

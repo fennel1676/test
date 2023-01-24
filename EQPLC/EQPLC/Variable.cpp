@@ -1,0 +1,25 @@
+// Variable.cpp: implementation of the CVariable class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "Variable.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CVariable::CVariable()
+{
+	memset(m_pData, 0x00, sizeof(m_pData));
+}
+
+CVariable::~CVariable()
+{
+}
